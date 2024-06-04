@@ -1,34 +1,50 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Adjust spacing based on the Figma design */
 }
 
 .gallery-item {
-    width: 250px;
+    width: 250px; /* Adjust based on the Figma design */
     border: 1px solid #ccc;
-    overflow: hidden;
+    overflow: hidden; /* Hide overflow of image for hover effect */
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+    width: 100%; /* Image takes up full width of its container */
+    height: auto; /* Image maintains aspect ratio */
+    transition: transform 0.3s ease; /* Smooth hover transition */
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Zoom image on hover */
 }
 
 .details {
+    /* Style the details section according to the Figma design */
     text-align: center;
     margin-top: 20px;
 }
 
-/* Responsive Design */
+/* Responsive Design (Example) */
 @media (max-width: 768px) {
     .gallery-item {
-        width: 45%;
+        width: 45%; /* Adjust width for smaller screens */
     }
 }
+
+/* Add your custom styles for colors, fonts, etc., based on the Figma design */
