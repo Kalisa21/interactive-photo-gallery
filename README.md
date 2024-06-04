@@ -1,33 +1,36 @@
-# interactive-photo-gallery
 # Interactive Photo Gallery
 
-This repository contains the code for an interactive photo gallery built using HTML, CSS, and JavaScript. It also includes solutions to two JavaScript coding challenges.
+This project is an interactive photo gallery built using HTML, CSS, and JavaScript. 
 
-## Installation
+**Features:**
 
-1. Clone the repository to your local machine:
+- Responsive layout with multiple image tiles
+- Hover effect to display image details
+- Dynamically updated image details using JavaScript
 
-```bash
-git clone https://github.com/your-username/interactive-photo-gallery
-Navigate to the project directory:
-cd interactive-photo-gallery
-Open the index.html file in your browser.
-Usage
-The photo gallery displays a collection of images. You can hover over an image to view its title and description.
+**Instructions:**
 
-Coding Challenges
-Challenge 1: Array Manipulation
-Problem Statement: Given an array of integers and a target sum, determine if there exists a contiguous subarray within the array that sums up to the target. Return true if such a subarray exists, otherwise return false.
+1. **Setup:**
+   - Create a new directory for the project.
+   - Copy the `index.html`, `style.css`, `script.js`, and `images` folder into the directory.
+   - Ensure you have image files in the `images` folder.
+2. **Run:**
+   - Open `index.html` in your web browser.
 
-Solution: The hasContiguousSubarray function in Challenges/arrayMap.js provides the solution.
+**Coding Challenges:**
 
-Challenge 2: String Transformation
-Problem Statement: Given a string, transform it based on the following rules:
+This project includes two coding challenges, which can be found in separate JavaScript files (`arrayMap.js` and `stringTransform.js`). You can test these challenges by opening the files in your browser console. 
 
-If the length of the string is divisible by 3, reverse the entire string.
-If the length of the string is divisible by 5, replace each character with its ASCII code.
-If the length of the string is divisible by both 3 and 5 (i.e., divisible by 15), perform both operations in the order specified above.
-Solution: The transformString function in Challenges/stringTransform.js provides the solution.
-Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
+**Approach:**
 
+- **Photo Gallery:** 
+  - The gallery uses flexbox for layout. 
+  - Hover events are used to trigger the display of image details. 
+  - JavaScript is used to update the details section with information retrieved from the image elements.
+- **Coding Challenges:**
+  - The challenges involve manipulating arrays and strings using JavaScript.
+  - The solutions provided are efficient and use appropriate methods for the specific tasks.
+
+**GitHub Repository:**
+
+The code for this project is available at [your GitHub repository link].

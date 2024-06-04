@@ -1,36 +1,21 @@
-const galleryItems = document.querySelector(".gallery-items");
+const galleryItems = document.querySelectorAll('.gallery-item');
+const imageTitle = document.querySelector('.image-title');
+const imageDescription = document.querySelector('.image-description');
+const imageLocation = document.querySelector('.image-location');
+const details = document.querySelector('.details');
 
-const photos = [
-    {
-        src: "images/photo1.jpg",
-        title: "Photo 1",
-        description: "Description of Photo 1"
-    },
-    // Add more photo objects here
-];
+galleryItems.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    const img = item.querySelector('img');
+    imageTitle.textContent = img.alt;
+    // Add logic to get description and location based on your structure
 
-photos.forEach(photo => {
-    const galleryItem = document.createElement("div");
-    galleryItem.classList.add("gallery-item");
+    // Show details section
+    details.style.display = 'block';
+  });
 
-    const img = document.createElement("img");
-    img.src = photo.src;
-    img.alt = photo.title;
-
-    const details = document.createElement("div");
-    details.classList.add("gallery-details");
-
-    const title = document.createElement("h3");
-    title.textContent = photo.title;
-
-    const description = document.createElement("p");
-    description.textContent = photo.description;
-
-    details.appendChild(title);
-    details.appendChild(description);
-
-    galleryItem.appendChild(img);
-    galleryItem.appendChild(details);
-
-    galleryItems.appendChild(galleryItem);
+  item.addEventListener('mouseout', () => {
+    // Hide details section
+    details.style.display = 'none';
+  });
 });
