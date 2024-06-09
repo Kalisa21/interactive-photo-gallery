@@ -1,53 +1,32 @@
-# Interactive Photo Gallery
+Interactive Photo Gallery
+This project implements an interactive photo gallery using HTML, CSS, and JavaScript. The gallery displays images with a hover effect that shows additional information about each image.
 
-This project is a simple interactive photo gallery with hover effects and details displayed on mouseover. 
+Features
+Responsive design: The gallery adapts to different screen sizes.
+Hover effect: When hovering over an image, the details (title, description, and location) are displayed in a separate section.
+Customizable image data: You can easily change the images and information by modifying the data attributes in the HTML.
+Files
+index.html: The main HTML file that contains the structure of the gallery.
+style.css: The CSS file responsible for styling the gallery elements.
+script.js: The JavaScript file that handles the hover effect and dynamically updates the image details.
+images: A folder containing the images used in the gallery.
+Instructions
+Download the code: Download the zip file containing the project files from [Link to GitHub Repository].
+Open in browser: Open the index.html file in your web browser.
+Explore the gallery: Hover over the images to see their details.
+Customization
+Images: Replace the sample images with your own by updating the src attribute in the image tags in index.html.
+Image details: Update the data-title, data-description, and data-location attributes for each image to change the information displayed on hover.
+Styling: Adjust the CSS in style.css to customize the look and feel of the gallery according to your preferences.
+Coding Challenges
+The repository also includes two JavaScript coding challenges:
 
-## Getting Started
+arrayMap.js: This challenge involves determining if a subarray in a given array sums to a specified target value.
+stringTransform.js: This challenge transforms a string based on its length and its divisibility by 3, 5, and 15.
+Contribution
+Feel free to contribute to this project by submitting bug reports, feature requests, or code improvements.
 
-1. **Download:** Download the project files.
-2. **Open index.html:** Open the `index.html` file in your web browser.
+author : willy kalisa
+repository link : https://github.com/Kalisa21/interactive-photo-gallery
 
-## Testing the Coding Challenges
-
-1. **Open DevTools:**  Open your browser's developer console (usually by pressing F12).
-2. **Run the challenges:** In the console, type `node arrayMap.js` and `node stringTransform.js` to see the output.
-
-## Project Structure
-
-- `index.html`: Main HTML file.
-- `style.css`: CSS file for styling.
-- `script.js`: JavaScript file for interactivity.
-- `images/`: Folder containing image files.
-- `arrayMap.js`: Coding challenge for array manipulation.
-- `stringTransform.js`: Coding challenge for string transformations.
-
-## Approach
-
-**Photo Gallery:**
-
-- The gallery uses flexbox for layout and responsive design.
-- Hover effects are implemented using CSS transitions.
-- JavaScript is used to display image details dynamically on hover.
-
-**Coding Challenges:**
-
-- **Array Manipulation:** The `hasSubarrayWithSum()` function uses a sliding window approach to efficiently check if a subarray sum exists.
-- **String Transformation:** The `transformString()` function utilizes string manipulation methods and conditional logic to apply the specified transformations. 
-
-## Acknowledgments
-
-- Figma Design: [Link to your Figma file if available]
-
-## Author
-
-[Your Name]
-GitHub Repository:
-
-Create a new public repository on GitHub.
-Push the project files to the repository.
-Important Notes:
-
-Figma Design: Make sure your CSS and layout closely match the Figma design.
-Image Data: Replace the sample image data in script.js with your actual image information.
-Testing: Thoroughly test your gallery and coding challenges in different browsers and screen sizes.
-Readme File: Provide a comprehensive README.md file with clear instructions and explanations.
+Enjoy building your interactive photo gallery!

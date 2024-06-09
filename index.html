@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Photo Gallery</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="gallery">
-            <!-- Image elements will go here -->
-            <div class="gallery-item">
-                <img src="https://github.com/Kalisa21/interactive-photo-gallery/blob/main/images/fox.png" alt="Fennec Fox">
-            </div>
-            <div class="gallery-item">
-                <img src="images/whale.png" alt="Humpback Whale">
-            </div>
-            <div class="gallery-item">
-                <img src="images/baboon.png" alt="Common Brown Baboon">
-            </div>
-            <div class="gallery-item">
-                <img src="images/deer.png" alt="Spotted Deer">
-            </div>
-        </div>
-        <div class="details">
-            <h2 class="image-title"></h2>
-            <p class="image-description"></p>
-            <p class="image-location"></p>
-        </div>
+  <div class="container">
+    <div class="gallery">
+      <!-- Image elements will go here -->
+      <div class="gallery-item">
+        <img src="images/fox.png" alt="Fennec Fox" data-title="Fennec Fox" data-description="A small desert fox with large ears." data-location="Sahara Desert">
+      </div>
+      <div class="gallery-item">
+        <img src="images/whale.png" alt="Humpback Whale" data-title="Humpback Whale" data-description="A large baleen whale known for its songs." data-location="All oceans">
+      </div>
+      <div class="gallery-item">
+        <img src="images/baboon.png" alt="Common Brown Baboon" data-title="Common Brown Baboon" data-description="A large monkey found in Africa." data-location="Savanna">
+      </div>
+      <div class="gallery-item">
+        <img src="images/deer.png" alt="Spotted Deer" data-title="Spotted Deer" data-description="A deer with white spots." data-location="Forests">
+      </div>
     </div>
-    <script src="script.js"></script>
+    <div class="details">
+      <h2 class="image-title"></h2>
+      <p class="image-description"></p>
+      <p class="image-location"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -4,24 +4,16 @@ const imageDescription = document.querySelector('.image-description');
 const imageLocation = document.querySelector('.image-location');
 const details = document.querySelector('.details');
 
-// Sample image data (replace with your actual data)
-const imageData = [
-    { title: "Fennec Fox", description: "A small desert fox with large ears.", location: "Sahara Desert" },
-    { title: "Humpback Whale", description: "A large baleen whale known for its songs.", location: "All oceans" },
-    { title: "Common Brown Baboon", description: "A large monkey found in Africa.", location: "Savanna" },
-    { title: "Spotted Deer", description: "A deer with white spots.", location: "Forests" }
-];
+galleryItems.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    const img = item.querySelector('img');
+    imageTitle.textContent = img.getAttribute('data-title');
+    imageDescription.textContent = img.getAttribute('data-description');
+    imageLocation.textContent = img.getAttribute('data-location');
+    details.style.display = 'block'; 
+  });
 
-galleryItems.forEach((item, index) => {
-    item.addEventListener('mouseover', () => {
-        const img = item.querySelector('img');
-        imageTitle.textContent = img.alt; 
-        imageDescription.textContent = imageData[index].description;
-        imageLocation.textContent = imageData[index].location;
-        details.style.display = 'block'; // Show details section
-    });
-
-    item.addEventListener('mouseout', () => {
-        details.style.display = 'none'; // Hide details section
-    });
+  item.addEventListener('mouseout', () => {
+    details.style.display = 'none';
+  });
 });
